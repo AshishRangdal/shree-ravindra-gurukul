@@ -2,12 +2,14 @@ import Head from "next/head";
 import Carousal from "../components/home/Carousal";
 import Hero from "../components/home/Hero";
 import Stats from "../components/home/Stats";
-import Testimonials from "../components/home/Testimonials";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
-import CoreTeam from "../components/home/CoreTeam";
 import Donate from "../components/home/Donate";
 import About from "../components/home/About";
+import dynamic from "next/dynamic";
+const Testimonials = dynamic(() => import('../components/home/Testimonials'), { ssr: false });
+const CoreTeam = dynamic(() => import('../components/home/CoreTeam'), { ssr: false });
+
 
 export default function Home() {
   return (

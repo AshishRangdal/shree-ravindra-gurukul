@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className=" bg-linear-pink-invert bg-zinc-100">
         <div className="mx-auto container pt-20 flex flex-col items-center justify-center">
           <div className="text-black flex flex-col md:items-center f-f-l pt-3 w-full">
-            <img src="/logo2.png" alt="" className="h-30 lg:h-20 w-8/12 sm:w-auto self-center object-contain" />
+            <Image src="/logo2.png" alt="logo" className="h-30 lg:h-20 w-8/12 sm:w-auto self-center object-contain" />
             <div className="my-6 text-base text-color f-f-l mx-4 opacity-60 text-center">
               <b>Address:</b> Shri Ravindra Gurukul Trust<br/>
               Akkalkot, District Solapur, Maharashtra, India <br/>

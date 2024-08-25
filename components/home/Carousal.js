@@ -3,6 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper";
+import Image from "next/image";
 
 export default function Carousal() {
   const carouselImage = [
@@ -64,7 +65,7 @@ export default function Carousal() {
             className="flex justify-center items-center overflow-visible"
             key={index}
           >
-            <img
+            <Image
               src={item?.src}
               alt={item?.alt}
               className="sm:w-10/12 rounded-lg shadow-md ring ring-zinc-200"

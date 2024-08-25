@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../public/logo2.png";
+import Image from "next/image";
 export default function CoreTeam() {
   const cc = [
     {
@@ -45,7 +46,7 @@ export default function CoreTeam() {
               key={index}
               className="flex flex-col items-center m-2 p-4 py-10 brightness-90 rounded-md w-56"
             >
-              <img
+              <Image
                 src={`${window.location.origin}/logo2.png`}
                 alt={cc.name}
                 className="rounded-full w-20 h-20 md:w-28 md:h-28 object-cover ring ring-zinc-200"

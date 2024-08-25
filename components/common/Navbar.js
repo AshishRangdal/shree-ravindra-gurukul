@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -34,7 +35,7 @@ export default function Navbar() {
           title="Company"
           class="inline-flex items-center"
         >
-          <img src="/logo2.png" alt="logo" className="h-14 lg:h-30" />
+          <Image src="/logo2.png" alt="logo" className="h-14 lg:h-30" />
         </a>
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li>
